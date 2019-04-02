@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+body {
+	font-family: "PT Serif", sans-serif;
+}
+
+/************* HEADER *************/
+
+.header {
+	display: flex;
+	width: 100%;
+	background-color: rgb(6, 170, 235);
+	align-items: center;
+	color: white;
+}
+
+.logo {
+	font-size: 2rem;
+	margin-left: 20px;
+	color: white;
+}
+
+.nav-bar {
+	margin-left: auto;
+	padding: 20px;
+}
+
+.menu {
+	display: flex;
+	list-style: none;
+}
+
+.menu-item {
+	padding-right: 10px;
+}
+
+/******** MAIN *********/
+
+.main {
+	display: flex;
+	justify-content: center;
+}
+
+/******** POST COMPONENT *********/
+
+.container {
+	display: flex;
+	margin: 10px;
+	align-self: center;
+}
+
+.post-header {
+	display: flex;
+	margin-bottom: 10px;
+}
+.avatar {
+	max-width: 50px;
+	border-radius: 50%;
+}
+
+.author {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.profile-name,
+.date {
+	color: #bfbfbf;
+	margin-left: 8px;
+	font-size: 0.9rem;
+}
+
+.post {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	width: 400px;
+}
+
+.fa-angle-down {
+	margin-left: auto;
+	color: #4d4d4d;
+}
+
+.post-image {
+	max-width: 400px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+
+.image-footer {
+	border: 1px solid #bfbfbf;
+	margin-top: -7px;
+	border-radius: 5px;
+}
+
+.image-footer > p,
+h4 {
+	margin-left: 10px;
+}
+
+.image-footer > p {
+	margin-bottom: 10px;
+}
+
+.image-footer > h4 {
+	margin-top: 10px;
+	margin-bottom: 7px;
+}
+
+.link {
+	margin-left: 10px;
+	font-size: 0.9rem;
+	color: #bfbfbf;
+}
