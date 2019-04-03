@@ -12,6 +12,7 @@ a {
 
 body {
 	font-family: "PT Serif", sans-serif;
+	background-color: #f2f2f2;
 }
 
 /************* HEADER *************/
@@ -47,20 +48,75 @@ body {
 /******** MAIN *********/
 
 .main {
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: 300px 2fr;
+	grid-template-rows: 300px auto auto;
+	grid-gap: 20px;
+	padding-top: 20px;
+	margin: 0 25%;
+}
+
+/******** PROFILE INFO COMPONENT *********/
+
+.profile-info {
+	width: 100%;
+	background-color: white;
+	color: rgb(6, 170, 235);
+	/* background-color: gray; */
+}
+
+.profile-cover > img {
+	width: 300px;
+	height: 127px;
+}
+
+.feed {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row: 1 / span 2;
+	justify-self: center;
+}
+
+.profile-avatar {
+	position: relative;
+	left: 10px;
+	bottom: 70px;
+	border-radius: 50%;
+}
+
+.profile-info > p {
+	color: #69d2fc;
+	padding-bottom: 10px;
+}
+
+.user-info {
+	position: relative;
+	bottom: 50px;
+	padding-left: 10px;
+}
+
+.user-info > p {
+	margin-bottom: 10px;
+}
+
+.fa-map-marker-alt {
+	margin-right: 5px;
 }
 
 /******** POST COMPONENT *********/
 
 .container {
 	display: flex;
-	margin: 10px;
+	padding: 10px;
+	background-color: white;
+	margin-top: 5px;
+	width: 100%;
 	align-self: center;
 }
 
 .post-header {
 	display: flex;
+	width: 100%;
 	margin-bottom: 10px;
 }
 .avatar {
@@ -84,7 +140,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	margin-left: 10px;
-	width: 400px;
+
+	width: 85%;
+	padding-bottom: 30px;
 }
 
 .fa-angle-down {
@@ -93,7 +151,7 @@ body {
 }
 
 .post-image {
-	max-width: 400px;
+	max-width: 100%;
 	border-radius: 5px;
 	margin-top: 10px;
 }
@@ -122,4 +180,27 @@ h4 {
 	margin-left: 10px;
 	font-size: 0.9rem;
 	color: #bfbfbf;
+}
+
+/******** FEED *********/
+
+.feed {
+	width: 600px;
+}
+
+.text-box {
+	background-color: #b4e9fd;
+	padding: 15px;
+	width: 100%;
+}
+
+.textarea-style {
+	align-self: center;
+	border: none;
+	padding: 10px;
+	position: relative;
+	left: 95px;
+	resize: none;
+	border-radius: 15px;
+	box-shadow: 2px 2px 5px 2px rgb(6, 170, 235);
 }
